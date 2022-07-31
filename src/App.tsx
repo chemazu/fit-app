@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
 
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Register from "./pages/Register";
+import axios from 'axios';
+// Create a client
+const queryClient = new QueryClient();
+
+axios.defaults.baseURL = process.env.REACT_APP_API_URL
+// axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
+// axios.defaults.headers.post['Content-Type'] = 'application/json';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QueryClientProvider client={queryClient}>
+        <Register />
+      </QueryClientProvider>
     </div>
   );
 }
