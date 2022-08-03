@@ -54,7 +54,7 @@ export default function Register() {
           label={"Name"}
           control={{ value: username, setValue: setUserName }}
         />
-        <Input label={"Email"} control={{ value: email, setValue: setEmail }} />
+        <Input label={"Email"} control={{ value: email, setValue: setEmail }} type={"email"} />
         <Input label={"Phone"} control={{ value: phone, setValue: setPhone }} />
         <Input
           label={"Password"}
