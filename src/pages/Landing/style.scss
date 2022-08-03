@@ -1,8 +1,7 @@
 .landing {
   background-color: black;
   height: 100%;
-  background: url("../../assets/landing-3.jpg");
-  // animation-name: cf3FadeInOut;
+  animation-name: cf3FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 10s;
@@ -50,7 +49,7 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 60%;
+      top: 65%;
       width: 85%;
       z-index: 10;
       color: #fff;
@@ -78,59 +77,24 @@
     }
   }
 }
-// @keyframes homepics {
-//   0%,
-//   9.9999% {
-//     background-image: url(https://picsum.photos/id/1015/200/300);
-//   }
-//   10%,
-//   19.9999% {
-//     background-image: url(https://picsum.photos/id/1016/200/300);
-//   }
-//   20%,
-//   29.9999% {
-//     background-image: url(https://picsum.photos/id/1018/200/300);
-//   }
-//   30%,
-//   39.9999% {
-//     background-image: url(https://picsum.photos/id/1019/200/300);
-//   }
-//   40%,
-//   49.9999% {
-//     background-image: url(https://picsum.photos/id/1020/200/300);
-//   }
-//   50%,
-//   79.999% {
-//     background-image: url(https://picsum.photos/id/1021/200/300);
-//   }
-//   80%,
-//   89.999% {
-//     background-image: url(https://picsum.photos/id/1022/200/300);
-//   }
-//   90%,
-//   100% {
-//     background-image: url(https://picsum.photos/id/1023/200/300);
-//   }
-// }
 @keyframes cf3FadeInOut {
   0% {
   opacity:1;
-  background: url("../../assets/landing-1.jpg");
+  background-image: url("../../assets/landing-1.jpg");
 
 }
 45% {
 opacity:1;
-background: url("../../assets/landing-2.jpg");
+background-image: url("../../assets/landing-2.jpg");
 
 }
 55% {
-opacity:0;
-background: url("../../assets/landing-3.jpg");
+opacity:1;
+background-image: url("../../assets/landing-3.jpg");
 
 }
 100% {
-opacity:0;
-background: url("../../assets/landing-4.jpg");
-
+opacity:1;
+background-image: url("../../assets/landing-4.jpg");
 }
 }
