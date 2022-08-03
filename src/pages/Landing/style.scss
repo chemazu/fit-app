@@ -1,18 +1,14 @@
 .landing {
-  background-color: black;
-  height: 100%;
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
-  overflow-y: scroll;
-  padding: 5%;
-  padding-bottom: 10%;
+  height: 100%;
+
+  .myvideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -24,7 +20,7 @@
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgba(27, 26, 26) 100%
+      rgba(27, 26, 26) 80%
     );
     z-index: 5;
   }
@@ -32,7 +28,11 @@
     display: none;
   }
   .top {
-    .logo-wrapper{
+    // padding: 5%;
+    // padding-bottom: 10%;
+    padding: 10% 5%;
+    padding-top: 15%;
+    .logo-wrapper {
       display: flex;
       justify-content: left;
       width: 100%;
@@ -76,25 +76,4 @@
       }
     }
   }
-}
-@keyframes cf3FadeInOut {
-  0% {
-  opacity:1;
-  background-image: url("../../assets/landing-1.jpg");
-
-}
-45% {
-opacity:1;
-background-image: url("../../assets/landing-2.jpg");
-
-}
-55% {
-opacity:1;
-background-image: url("../../assets/landing-3.jpg");
-
-}
-100% {
-opacity:1;
-background-image: url("../../assets/landing-4.jpg");
-}
 }
