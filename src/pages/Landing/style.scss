@@ -1,42 +1,136 @@
 .landing {
   background-color: black;
   height: 100%;
-  background: url("../../assets/landing.jpg");
+  background: url("../../assets/landing-3.jpg");
+  // animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   overflow-y: scroll;
   padding: 5%;
-  color: rgb(182, 181, 181);
   padding-bottom: 10%;
-
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.343);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(27, 26, 26) 100%
+    );
+    z-index: 5;
+  }
   ::-webkit-scrollbar {
     display: none;
   }
-  .mid-content {
+  .top {
+    .logo-wrapper{
+      display: flex;
+      justify-content: left;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 60%;
-    width: 85%;
-    h1 {
-      font-weight: 700;
-      font-family: "Roboto Condensed", sans-serif;
-      line-height: 1.2em;
-    }
-    p {
-      padding: 10px 0;
-      font-size: 16px;
-      line-height: 1.2em;
-    }
-    .button-wrapper {
-      padding-top: 10px;
-      width: 100%;
-      
-    }
-    a {
-      color: lightblue;
-      text-decoration: none;
+    align-items: center;
+    .mid-content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60%;
+      width: 85%;
+      z-index: 10;
+      color: #fff;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-weight: 700;
+        font-family: "Roboto Condensed", sans-serif;
+        line-height: 1.2em;
+      }
+      p {
+        padding: 10px 0;
+        font-size: 16px;
+        line-height: 1.2em;
+      }
+      .button-wrapper {
+        padding-top: 10px;
+        width: 70%;
+      }
+      a {
+        color: lightblue;
+        text-decoration: none;
+      }
     }
   }
+}
+// @keyframes homepics {
+//   0%,
+//   9.9999% {
+//     background-image: url(https://picsum.photos/id/1015/200/300);
+//   }
+//   10%,
+//   19.9999% {
+//     background-image: url(https://picsum.photos/id/1016/200/300);
+//   }
+//   20%,
+//   29.9999% {
+//     background-image: url(https://picsum.photos/id/1018/200/300);
+//   }
+//   30%,
+//   39.9999% {
+//     background-image: url(https://picsum.photos/id/1019/200/300);
+//   }
+//   40%,
+//   49.9999% {
+//     background-image: url(https://picsum.photos/id/1020/200/300);
+//   }
+//   50%,
+//   79.999% {
+//     background-image: url(https://picsum.photos/id/1021/200/300);
+//   }
+//   80%,
+//   89.999% {
+//     background-image: url(https://picsum.photos/id/1022/200/300);
+//   }
+//   90%,
+//   100% {
+//     background-image: url(https://picsum.photos/id/1023/200/300);
+//   }
+// }
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+  background: url("../../assets/landing-1.jpg");
+
+}
+45% {
+opacity:1;
+background: url("../../assets/landing-2.jpg");
+
+}
+55% {
+opacity:0;
+background: url("../../assets/landing-3.jpg");
+
+}
+100% {
+opacity:0;
+background: url("../../assets/landing-4.jpg");
+
+}
 }
