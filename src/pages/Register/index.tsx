@@ -49,6 +49,7 @@ export default function Register() {
   return (
     <div className="register">
       <h2>Sign Up</h2>
+      <p style={{paddingTop:"15px"}}>Create an account</p>
       <form>
         <Input
           label={"Name"}

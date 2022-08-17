@@ -36,6 +36,8 @@ export default function Login() {
   return (
     <div className="login">
       <h2>Login</h2>
+      <p style={{paddingTop:"15px"}}>Login to your account</p>
+
       <form>
         <Input label={"Email"} control={{ value: email, setValue: setEmail }} type={email}/>
         <Input
