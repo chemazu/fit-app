@@ -64,7 +64,7 @@ export default function Login() {
           ) : null} */}
       </form>
       <p className="bottom-account">
-        Already have an account <Link to="/login">Login</Link>
+        Already have an account <Link to="/register">Register</Link>
       </p>
     </div>
   );
