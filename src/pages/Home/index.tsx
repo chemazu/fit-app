@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import HomePage from "./sub-pages/mini-home";
-import setting from "../../assets/setting.svg";
+import setting from "../../assets/img/setting.svg";
 
 export default function Home() {
   return (

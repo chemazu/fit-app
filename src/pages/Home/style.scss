@@ -1,7 +1,13 @@
 .home {
   background-color: rgb(25, 73, 124);
+  position: relative;
+
   height: 100%;
   padding: 5%;
+  .content{
+  height: 100%;
+
+  }
 
   .bottom-menu {
     display: flex;

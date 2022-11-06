@@ -1,0 +1,24 @@
+.today-routine {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  //   background-color: #2a4d68;
+  background-color: #fff;
+
+  border-radius: 5px;
+  img {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 7.5px;
+  }
+  .content {
+    padding: 10px;
+    .date {
+      display: flex;
+    }
+  }
+}

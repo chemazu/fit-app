@@ -1,7 +1,9 @@
 .mini-home {
   padding-bottom: 10%;
+  height: 100%;
+  box-sizing: border-box;
   .top-div {
-    padding: 5% 0;
+    padding: 2.5% 0;
     .user-initals {
       font-size: 1.5rem;
       font-weight: 500w;
@@ -9,6 +11,33 @@
       border-radius: 50%;
       height: 40px;
       width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .heading-item {
+    padding: 7.5px 0;
+  }
+  .for-you-card-wrapper {
+    display: flex;
+    overflow-y: scroll;
+    width: 100%;
+    gap:20px;
+  }
+  .start-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ padding: 7.5% 0;
+
+    h2 {
+      color: #000;
+      width: 25vw;
+      height: 25vw;
+      background-color: gold;
+      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
