@@ -1,12 +1,13 @@
 .home {
   background-color: rgb(25, 73, 124);
   position: relative;
+  box-sizing: border-box;
 
   height: 100%;
   padding: 5%;
-  .content{
-  height: 100%;
-
+  .content {
+    // height: 100%;
+    height: max-content;
   }
 
   .bottom-menu {
@@ -14,8 +15,10 @@
     position: absolute;
     bottom: 0;
     width: 90%;
+
     box-sizing: border-box;
     justify-content: space-between;
+
     .icon-container {
       width: 20%;
       text-align: center;
