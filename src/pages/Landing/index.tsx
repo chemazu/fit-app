@@ -9,14 +9,14 @@ export default function Landing() {
   let navigate = useNavigate();
   return (
     <div className="landing">
-      {/* <video
+      <video
         autoPlay={true}
         src={Video}
         className="myvideo"
         muted
         loop={true}
          playsInline={true}
-      /> */}
+      />
       <div className="top">
         <div className="logo-wrapper">
           <Logo className="pry-logo" />
